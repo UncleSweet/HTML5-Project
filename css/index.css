@@ -4,3 +4,12 @@ body{
     text-align: center;
     color:#cccccc;
 }
+
+#container{
+    text-align: center;
+    display: flex;
+    border: 1px solid slateblue;
+    width: 100px;
+    height: 200px;
+    
+}
