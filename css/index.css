@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* 整体不变标签的属性就在最上面定义 */
+
+body,h1,ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    list-style: outside none none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.none{
+    display: none;
+}
+
+#nav{
+    width: 100%;
+    height: 70px;
+    background-color: #333333;
+}
+
+#nav .nav-center{
+    width: 1264px;
+    height: 70px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav .nav-logo{
+    width: 240px;
+    height: 70px;
+   background-image: url("../img/logo.png");
+
+   /* 这个是为了让文字向左移动9999px */
+   text-indent: -9999px;
+}
+
+#nav .nav-link{
+    width: 650px;
+    height: 70px;
+    line-height: 70px;
+    color: #eee;
+}
+
+#nav .nav-link li{
+    width: 120px;
+    text-align: center;
+    float: left;
+}
+
+#nav .nav-link a{
+    display: block;
+    color: #eee;
+}
+
+#nav .nav-link a:hover,
+#nav .active  a{
+    background-color:#000;
+}
