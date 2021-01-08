@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>video</title>
+    </head>
+    <body>
+        <!-- 
+            audio里面的内容不支持格式，就会变成普通标签一样渲染。
+            perload 预加载
+            autoplay 自动播放
+            muted 静音
+         -->
+
+        <!-- <video src="../media/photo.mp4" controls="controls">
+            这个浏览器不支持现在的格式
+        <video> -->
+
+        <video controls autoplay="autoplay" muted>
+            <source src=".../media/photo.mp4" type="audio/mpeg" />
+            <source src="../media/photo.mp4" type="audio/wav" />
+            <source src="../media/photo.mp4" type="audio/mp4" />
+            <source src="../media/photo.mp4" type="audio/ogg" />
+            <p>你的浏览器版本太低了，赶紧去更新吧！</p>
+        </video>
+
+    <body>
+</html>

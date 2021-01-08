@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>audio</title>
+    </head>
+    <body>
+        <!-- 
+            audio里面的内容不支持格式，就会变成普通标签一样渲染。
+         -->
+
+        <!-- <audio src="../media/music1.m4a" controls="controls">
+            这个浏览器不支持现在的格式
+        </audio> -->
+
+        <audio controls>
+            <source src="../media/music2.m4a" type="audio/mpeg" />
+            <source src="../media/music2.m4a" type="audio/wav" />
+            <source src="../media/music2.m4a" type="audio/m4a" />
+            <source src="../media/music2.m4a" type="audio/ogg" />
+            <p>你的浏览器版本太低了，赶紧去更新吧！</p>
+        </audio>
+
+    <body>
+</html>
