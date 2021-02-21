@@ -1,0 +1,31 @@
+@charset "UTF-8";
+body, h1, h2, h3, p, form, fieldset, figure, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+div, img, figure, input, button {
+  /*使得设置样式时都在限定宽和高里面设置，不会超出限制范围*/
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+}
+
+/*一直让图片顶满整个容器从而实现自适应大小*/
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul, ol {
+  list-style: outside none none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=basic1.css.map */
