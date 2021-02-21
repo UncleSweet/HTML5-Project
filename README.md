@@ -20,8 +20,37 @@
 
 **2、html-effect是网页的效果图**
 
-### 使用技术
+### 基本技术
 
 **HTML5+CSS3+SCSS**
+
+### 重点技术
+
+**JS、JQ实现懒加载和预加载功能**
+
+##需要在服务器端才可看到效果
+>下载wampserver集成软件和git
+
+>>1、首先是克隆项目
+
+>>>打开git Bash here
+
+>>>cd 进入wampserver的www目录
+
+>>>输入git clone 'https地址'
+
+>>2、项目成功克隆后
+
+>>>打开wampserver服务器
+
+>>>>1、若改变了apache端口为8080
+
+>>>
+**使用localhost：8080/HTML5-Project打开即可**
+
+>>>>2、若没有改变
+
+>>>
+**使用loaclhost/HTML5-Proejct打开即可**
 
 
