@@ -9,7 +9,7 @@ function lazyLoad(obj,ncss,ocss,animate_time){
     //如果元素已经在可视范围内则直接加载
     for(var i = 0;i<_this.length;i++){
         if(_this.eq(i).offset().top <= document.documentElement.clientHeight){
-            lazyLoad(_this.eq(i),ncss,ocss,animate_time);
+            lazyLoadanimate(_this.eq(i),ncss,ocss,animate_time);
         }
     }
 
@@ -22,14 +22,14 @@ function lazyLoad(obj,ncss,ocss,animate_time){
             for(var i = 0;i<_this.length;i++){
                 //如果移动总高度大于元素顶端距离body高度，则实现替换加载且添加动画效果
                 if(move_height >= _this.eq(i).offset().top){
-                    lazyLoad(_this.eq(i),ncss,ocss,animate_time);
+                    lazyLoadanimate(_this.eq(i),ncss,ocss,animate_time);
                 }
             }
         },300);
     });
 
 
-    function lazyLoad(obj,ncss,ocss,animate_time){
+    function lazyLoadanimate(obj,ncss,ocss,animate_time){
         //设置xsrc替换src实现加载效果
         obj.attr(ncss,obj.attr(ocss));
         //设置缓慢加载动画
